@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.environment {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.status[data-status="free"] {
+    background-color: #28a745;
+}
+
+.status[data-status="occupied"] {
+    background-color: #dc3545;
+}
+
+.status[data-status="maintenance"] {
+    background-color: #ffc107;
+}
